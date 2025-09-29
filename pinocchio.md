@@ -1,4 +1,4 @@
-# pinocchio: the no-dependency framework for  @solana smart contracts
+# pinocchio: ## the no-dependency framework for  @solana smart contracts
 
 ### 1. what is pinocchio
 
