@@ -139,6 +139,5 @@ You can interact using:
 - Always rebuild (`cargo build-sbf`) after making code changes.  
 - On devnet/mainnet, make sure your wallet has enough SOL for deployment and account creation.  
 - The **program ID** is fixed at deployment. If you redeploy, you’ll get a new program ID.  
-EOF
 
-echo "✅ README.md has been created successfully."
+
