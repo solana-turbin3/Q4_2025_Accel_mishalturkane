@@ -11,7 +11,7 @@ The counter can be incremented or decremented by sending instructions.
 ### `Cargo.toml`
 Make sure your `Cargo.toml` looks like this:
 
-\`\`\`toml
+```toml
 [package]
 name = "counter-native-solana"
 version = "0.1.0"
@@ -23,7 +23,7 @@ crate-type = ["cdylib", "lib"]
 [dependencies]
 borsh = "0.10.3"
 solana-program = "2.2.1"
-\`\`\`
+```
 
 - `cdylib` → required to compile into `.so` for Solana runtime.  
 - `borsh` → used for serializing/deserializing account + instruction data.  
@@ -35,16 +35,16 @@ solana-program = "2.2.1"
 
 Compile the program into a deployable `.so`:
 
-\`\`\`bash
+```bash
 cargo build-sbf
-\`\`\`
+```
 
 Output files:
 
-\`\`\`
+```
 target/deploy/counter_native_solana.so
 target/deploy/counter_native_solana-keypair.json
-\`\`\`
+```
 
 ---
 
@@ -52,27 +52,27 @@ target/deploy/counter_native_solana-keypair.json
 
 Run a local Solana validator:
 
-\`\`\`bash
+```bash
 solana-test-validator
-\`\`\`
+```
 
 Set your CLI to point to it:
 
-\`\`\`bash
+```bash
 solana config set --url localhost
-\`\`\`
+```
 
 Fund your local wallet:
 
-\`\`\`bash
+```bash
 solana airdrop 10
-\`\`\`
+```
 
 Deploy locally:
 
-\`\`\`bash
+```bash
 solana program deploy target/deploy/counter_native_solana.so
-\`\`\`
+```
 
 You’ll get a **program ID** which is used by your client code.
 
@@ -82,41 +82,41 @@ You’ll get a **program ID** which is used by your client code.
 
 Switch to devnet:
 
-\`\`\`bash
+```bash
 solana config set --url devnet
-\`\`\`
+```
 
 Airdrop some SOL on devnet:
 
-\`\`\`bash
+```bash
 solana airdrop 2
-\`\`\`
+```
 
 Deploy the program:
 
-\`\`\`bash
+```bash
 solana program deploy target/deploy/counter_native_solana.so
-\`\`\`
+```
 
 ✅ Deployment Signature:  
-\`\`\`
+```
 4qb25SizUAWL5Nb7RqjemqdKSLSGi3marYmKHxDWGN1yJdqnQoY7gohKZX3jhr1wcGcJB6hvSXmX1ATo82QLXRMe
-\`\`\`
+```
 
 ---
 
 ## 📊 Program Logic
 
 - Each user has a unique PDA account derived from seeds:  
-  \`\`\`
+  ```
   [ "counter", user_pubkey ]
-  \`\`\`
+  ```
 - The PDA stores a `Counter` struct:
-  \`\`\`rust
+  ```rust
   pub struct Counter {
       pub count: u32,
   }
-  \`\`\`
+  ```
 - Instructions:
   - `Increment(u32)` → safely increases the counter.
   - `Decrement(u32)` → safely decreases the counter.
@@ -129,9 +129,9 @@ You can interact using:
 - **TypeScript** (`@solana/web3.js` + `borsh`) client.  
 - **Rust integration tests** (`solana-program-test`).  
 - View logs live with:
-  \`\`\`bash
+  ```bash
   solana logs
-  \`\`\`
+  ```
 
 ---
 
