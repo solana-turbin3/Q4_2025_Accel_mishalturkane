@@ -1,6 +1,4 @@
-#!/bin/bash
 
-cat > README.md << 'EOF'
 # Counter Native Solana Program
 
 A simple Solana program written in Rust that maintains a counter stored in a PDA (Program Derived Address).  
