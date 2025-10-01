@@ -34,12 +34,12 @@ fn process_instruction(
             ix.process()
         }
 
-        Some((&d, rest)) if d == *Increment::DISCRIMINATOR => {
+        Some((&d, _)) if d == *Increment::DISCRIMINATOR => {
             let ix = Increment::try_from((accounts))?;
             ix.process()
         }
 
-        Some((&d, rest)) if d == *Decrement::DISCRIMINATOR => {
+        Some((&d,_)) if d == *Decrement::DISCRIMINATOR => {
             let ix = Decrement::try_from((accounts))?;
             ix.process()
         }
