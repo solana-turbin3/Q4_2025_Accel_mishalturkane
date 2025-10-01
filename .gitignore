@@ -1,2 +1,17 @@
 /target
 /main
+/vault-anchor
+
+
+
+/node_modules
+/target
+/dist
+/coverage
+.DS_Store
+.idea
+.vscode
+*.log
+*.tsbuildinfo
+*.env
+
