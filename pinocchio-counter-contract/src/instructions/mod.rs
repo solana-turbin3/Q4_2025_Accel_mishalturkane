@@ -1,5 +1,6 @@
-pub mod deposit;
-pub mod withdraw;
+pub mod init;
+pub mod increment;
 
-pub use deposit::*;
-pub use withdraw::*;
+
+pub use init::*;
+pub use increment::*;

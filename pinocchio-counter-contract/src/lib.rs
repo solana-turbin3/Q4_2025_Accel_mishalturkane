@@ -14,8 +14,8 @@ nostd_panic_handler!();
  
 pub mod instructions;
 pub use instructions::*;
- 
-// 22222222222222222222222222222222222222222222
+
+/// 22222222222222222222222222222222222222222222
 pub const ID: Pubkey = [
     0x0f, 0x1e, 0x6b, 0x14, 0x21, 0xc0, 0x4a, 0x07,
     0x04, 0x31, 0x26, 0x5c, 0x19, 0xc5, 0xbb, 0xee,
@@ -29,8 +29,7 @@ fn process_instruction(
     instruction_data: &[u8],
 ) -> ProgramResult {
     match instruction_data.split_first() {
-        Some((Deposit::DISCRIMINATOR, data)) => Deposit::try_from((data, accounts))?.process(),
-        Some((Withdraw::DISCRIMINATOR, _)) => Withdraw::try_from(accounts)?.process(),
+       
         _ => Err(ProgramError::InvalidInstructionData),
     }
 }
