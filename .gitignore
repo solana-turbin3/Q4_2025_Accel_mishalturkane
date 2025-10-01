@@ -2,7 +2,7 @@
 /main
 /vault-anchor
 /anchor_escrow
-
+/counter-native-solana
 
 /node_modules
 /target
