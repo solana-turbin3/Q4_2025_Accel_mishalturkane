@@ -27,9 +27,23 @@ fn process_instruction(
     _program_id: &Pubkey,
     accounts: &[AccountInfo],
     instruction_data: &[u8],
-) -> ProgramResult {
-    match instruction_data.split_first() {
-       
+) -> ProgramResult { match instruction_data.split_first() {
+        Some((&d, rest)) if d == *Initialize::DISCRIMINATOR => {
+            // Pass both accounts and the rest of instruction_data
+            let ix = Initialize::try_from((accounts, rest))?;
+            ix.process()
+        }
+
+        Some((&d, rest)) if d == *Increment::DISCRIMINATOR => {
+            let ix = Increment::try_from((accounts))?;
+            ix.process()
+        }
+
+        Some((&d, rest)) if d == *Decrement::DISCRIMINATOR => {
+            let ix = Decrement::try_from((accounts))?;
+            ix.process()
+        }
+
         _ => Err(ProgramError::InvalidInstructionData),
     }
 }
