@@ -89,7 +89,7 @@ impl <'a> TryFrom<(&'a [AccountInfo],&'a [u8])> for Initialize<'a> {
 impl <'a> Initialize<'a> {
     pub const DISCRIMINATOR: &'a u8 = &0;
 
-      pub fn process(&self) -> ProgramResult {
+        pub fn process(&self) -> ProgramResult {
         let counter_account = self.accounts.counter_account;
 
         // Get mutable data reference
