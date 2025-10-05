@@ -49,6 +49,3 @@ This tool is widely used in high-performance validator and infrastructure setups
 ---
 
 ### Next Steps
-- Watch the YouTube walkthrough (link above) and take notes on Vixen’s design.  
-- Explore `examples/` in the GitHub repo to understand common configurations.  
-- Compare how Fumarole and Vixen complement each other in the Yellowstone stack.  
