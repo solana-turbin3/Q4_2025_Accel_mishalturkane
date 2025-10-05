@@ -13,6 +13,7 @@
 | Token Extensions        | [Solana Token Extensions](https://solana.com/solutions/token-extensions)                 |
 | Lite SVM                | [GitHub LiteSVM](https://github.com/LiteSVM/litesvm)                                    |
 
+---
 
 ## Token Extension
 | Token Extension Resource                    | Link                                                                                                           |
