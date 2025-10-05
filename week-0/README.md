@@ -21,7 +21,7 @@
 | Getting Started Guide (Solana Developers)   | [Getting Started with Token Extensions](https://solana.com/developers/guides/token-extensions/getting-started) |
 | YouTube Playlist (Video Tutorials)          | [Token Extensions Video Playlist](https://www.youtube.com/playlist?list=PLilwLeBwGuK6imBuGLSLmzMEyj6yVHGDO)    |
 
-
+---
 ## Yellowstone Vixen – Preparation Notes
 
 ### Overview
