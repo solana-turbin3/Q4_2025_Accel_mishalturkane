@@ -22,15 +22,15 @@
 | YouTube Playlist (Video Tutorials)          | [Token Extensions Video Playlist](https://www.youtube.com/playlist?list=PLilwLeBwGuK6imBuGLSLmzMEyj6yVHGDO)    |
 
 
-# Yellowstone Vixen – Preparation Notes
+## Yellowstone Vixen – Preparation Notes
 
-## Overview
+### Overview
 Yellowstone Vixen is a powerful open-source RPC proxy designed for Solana.  
 It helps developers scale Solana RPC usage by handling requests more efficiently, enabling better observability, caching, and performance tuning.  
 
 This tool is widely used in high-performance validator and infrastructure setups.  
 
-## Learning Resources  
+### Learning Resources  
 
 | Resource Type       | Link                                                                                         |
 |---------------------|----------------------------------------------------------------------------------------------|
