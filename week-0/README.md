@@ -20,3 +20,35 @@
 | Token Extensions Overview (Solana)          |  [Solana Token Extensions](https://solana.com/solutions/token-extensions)                                       |
 | Getting Started Guide (Solana Developers)   | [Getting Started with Token Extensions](https://solana.com/developers/guides/token-extensions/getting-started) |
 | YouTube Playlist (Video Tutorials)          | [Token Extensions Video Playlist](https://www.youtube.com/playlist?list=PLilwLeBwGuK6imBuGLSLmzMEyj6yVHGDO)    |
+
+
+# Yellowstone Vixen – Preparation Notes
+
+## Overview
+Yellowstone Vixen is a powerful open-source RPC proxy designed for Solana.  
+It helps developers scale Solana RPC usage by handling requests more efficiently, enabling better observability, caching, and performance tuning.  
+
+This tool is widely used in high-performance validator and infrastructure setups.  
+
+## Learning Resources  
+
+| Resource Type       | Link                                                                                         |
+|---------------------|----------------------------------------------------------------------------------------------|
+| GitHub Repo         | [Yellowstone Vixen GitHub](https://github.com/rpcpool/yellowstone-vixen)                     |
+| Documentation       | [Vixen Docs (README)](https://github.com/rpcpool/yellowstone-vixen/blob/main/README.md)      |
+| Video Walkthrough   | [YouTube – Yellowstone Vixen Deep Dive](https://www.youtube.com/watch?v=8vh38ky_69U)         |
+| Related Project     | [Yellowstone Fumarole](https://github.com/rpcpool/yellowstone-fumarole)                      |
+
+## Key Concepts to Explore
+- RPC Proxying and Request Handling in Solana  
+- How Vixen scales RPC usage for high-load environments  
+- Observability and metrics (logs, Prometheus, Grafana integration)  
+- Differences between Vixen and Fumarole  
+- Use cases in production-grade Solana infra  
+
+---
+
+### Next Steps
+- Watch the YouTube walkthrough (link above) and take notes on Vixen’s design.  
+- Explore `examples/` in the GitHub repo to understand common configurations.  
+- Compare how Fumarole and Vixen complement each other in the Yellowstone stack.  
