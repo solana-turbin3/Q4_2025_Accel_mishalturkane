@@ -47,5 +47,3 @@ This tool is widely used in high-performance validator and infrastructure setups
 - Use cases in production-grade Solana infra  
 
 ---
-
-### Next Steps
