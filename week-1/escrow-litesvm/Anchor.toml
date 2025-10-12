@@ -6,7 +6,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-whitelist_transfer_hook = "BexLnVyRM6ZzEVwHD9mNxw3ZoJdksGS5YcHS867mCzr4"
+escrow_litesvm = "E9WN8DJGBjUcRjTJp8zxUrpb4t9QR27ifECTmaAASCYy"
 
 [registry]
 url = "https://api.apr.dev"
