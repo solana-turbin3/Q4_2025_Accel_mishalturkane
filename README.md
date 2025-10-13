@@ -21,7 +21,7 @@
 ### 🗓️ Week 2
 | Class | Day | Date | Topic / Focus |
 |:------:|:----:|:----:|:--------------|
-| Class 1 | Monday | 13-10-2025 | — |
+| Class 1 | Monday | 13-10-2025 | Magic Block |
 | Class 2 | Wednesday | 15-10-2025 | — |
 | Class 3 | Friday | 17-10-2025 | — |
 
@@ -51,4 +51,3 @@
 | Class 1 | Monday | 03-11-2025 | — |
 | Class 2 | Wednesday | 05-11-2025 | — |
 | Class 3 | Friday | 07-11-2025 | — |
-
